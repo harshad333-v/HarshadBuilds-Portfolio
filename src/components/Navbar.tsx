@@ -52,7 +52,7 @@ const Navbar = () => {
           whileHover={{ scale: 1.05 }}
           onClick={() => scrollTo("Home")}
         >
-          JM
+          HarshadBuilds
         </motion.span>
 
         <div className="hidden md:flex items-center gap-8">
