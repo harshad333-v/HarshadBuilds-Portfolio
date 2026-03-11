@@ -2,11 +2,8 @@ import { motion } from "framer-motion";
 import { Briefcase, GraduationCap } from "lucide-react";
 
 const jobs = [
-  { company: "WHITE FISH ADVERTISING CO.", role: "Art Director", period: "2019 – Present" },
-  { company: "PYRAMIDS SUN ADVERTISING CO.", role: "Senior Graphic Designer", period: "2017 – 2019" },
-  { company: "PLANET STATIONARY & PRINTING SERVICES CO.", role: "Graphic Designer", period: "2015 – 2017" },
-  { company: "PLAY GRAPHIC ADVERTISING AGENCY", role: "Graphic Designer", period: "2013 – 2015" },
-  { company: "MARCO FLORIDA INTERNET & COMPUTER SERVICES CO.", role: "Graphic Designer", period: "2011 – 2013" },
+  { company: "PNINFOSYS.", role: "Web Designer", period: "Sep-2025 – Oct-2025", },
+  { company: "EduSkills", role: "MERN Stack Developer", period: "Jan 2026 – March 2026" },
 ];
 
 const Experience = () => {
@@ -33,7 +30,7 @@ const Experience = () => {
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
                 <Briefcase size={18} className="text-primary" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground">Work Experience</h3>
+              <h3 className="text-xl font-semibold text-foreground">Work Experience & Internship</h3>
             </div>
 
             <div className="relative pl-8 border-l border-foreground/10">
@@ -76,9 +73,9 @@ const Experience = () => {
               >
                 <div className="absolute -left-[41px] w-4 h-4 rounded-full bg-background border-2 border-primary" />
                 <div className="glass rounded-xl p-6 glow-border-hover transition-all duration-500">
-                  <span className="text-primary text-xs font-medium tracking-wider">2007 – 2011</span>
-                  <h4 className="text-foreground font-semibold mt-1">BS/MS in Computer Science</h4>
-                  <p className="text-secondary-foreground text-sm mt-1">University of Maryland</p>
+                  <span className="text-primary text-xs font-medium tracking-wider">2024 – 2028</span>
+                  <h4 className="text-foreground font-semibold mt-1">B.Tech in Computer Science</h4>
+                  <p className="text-secondary-foreground text-sm mt-1">ITM University, Gwalior</p>
                 </div>
               </motion.div>
             </div>

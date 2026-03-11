@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBehance, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {  faInstagram, faLinkedinIn, faXTwitter } from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -84,9 +84,9 @@ const Contact = () => {
             className="space-y-6"
           >
             {[
-              { icon: Mail, label: "Email", value: "jmartin@uptowork.com" },
-              { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-              { icon: MapPin, label: "Location", value: "Florida, Orlando" },
+              { icon: Mail, label: "Email", value: "gptharshd@gmail.com" },
+              { icon: Phone, label: "Phone", value: "+91 9430209077" },
+              { icon: MapPin, label: "Location", value: "Gwalior, Madhya Pradesh, India." },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4 glass rounded-xl p-5 glow-border-hover transition-all duration-500">
                 <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
@@ -100,7 +100,7 @@ const Contact = () => {
             ))}
 
             <div className="flex gap-4 pt-4">
-              {[faBehance, faInstagram, faTwitter].map((icon, i) => (
+              {[faLinkedinIn  , faInstagram, faXTwitter].map((icon, i) => (
                 <motion.a
                   key={i}
                   href="#"

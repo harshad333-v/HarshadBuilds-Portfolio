@@ -25,17 +25,16 @@ const SkillBar = ({ name, level, delay }: SkillBarProps) => (
 );
 
 const software = [
-  { name: "Photoshop", level: 95 },
-  { name: "Illustrator", level: 90 },
-  { name: "InDesign", level: 85 },
-  { name: "Premiere", level: 80 },
-  { name: "After Effects", level: 75 },
+  { name: "Java", level: 80 },
+  { name: "React", level: 70 },
+  { name: "JavaScript", level: 85 },
+  { name: "MySQL", level: 80 },
+  { name: "UI/UX Design", level: 75 },
 ];
 
 const languages = [
   { name: "English", level: 95 },
-  { name: "Arabic", level: 80 },
-  { name: "Turkish", level: 60 },
+  { name: "Hindi", level: 99 },
 ];
 
 const personal = [

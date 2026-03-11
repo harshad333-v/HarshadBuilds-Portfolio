@@ -1,7 +1,13 @@
 import { motion } from "framer-motion";
 import { ArrowUp } from "lucide-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBehance, faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import {
+  faFacebookF,
+  faGithub,
+  faInstagram,
+  faLinkedin,
+  faXTwitter,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -9,21 +15,23 @@ const Footer = () => {
       <div className="container-portfolio">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-secondary-foreground text-sm">
-            © 2024 Jason Martin. All rights reserved.
+            © 2026 HarshadBuilds. All rights reserved.
           </p>
 
           <div className="flex gap-4">
-            {[faBehance, faFacebookF, faInstagram, faTwitter].map((icon, i) => (
-              <motion.a
-                key={i}
-                href="#"
-                whileHover={{ scale: 1.15 }}
-                className="w-9 h-9 rounded-full border border-foreground/10 flex items-center justify-center
+            {[faGithub, faFacebookF, faInstagram, faXTwitter, faLinkedin].map(
+              (icon, i) => (
+                <motion.a
+                  key={i}
+                  href="#"
+                  whileHover={{ scale: 1.15 }}
+                  className="w-9 h-9 rounded-full border border-foreground/10 flex items-center justify-center
                   text-secondary-foreground hover:text-primary hover:border-primary/50 transition-all duration-300 text-sm"
-              >
-                <FontAwesomeIcon icon={icon} />
-              </motion.a>
-            ))}
+                >
+                  <FontAwesomeIcon icon={icon} />
+                </motion.a>
+              ),
+            )}
           </div>
 
           <motion.button

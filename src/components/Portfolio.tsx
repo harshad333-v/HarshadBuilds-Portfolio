@@ -1,22 +1,41 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import tripboss from "../asset/Tripboss.png";
+import space from "../asset/spaceEdu.png";
+import quiz from "../asset/quiz.png";
 
-const filters = ["All", "Branding", "UI/UX", "Web", "Graphic"];
+const filters = ["All"];
 
 const projects = [
-  { title: "Nexus Brand Identity", category: "Branding", desc: "Complete brand redesign for tech startup", tech: ["Illustrator", "Photoshop"] },
-  { title: "Vortex Dashboard", category: "UI/UX", desc: "Analytics dashboard with data visualization", tech: ["Figma", "Principle"] },
-  { title: "Lunar Web Platform", category: "Web", desc: "E-commerce platform with modern UI", tech: ["React", "Tailwind"] },
-  { title: "Prism Campaign", category: "Graphic", desc: "Multi-channel advertising campaign", tech: ["Photoshop", "InDesign"] },
-  { title: "Echo Mobile App", category: "UI/UX", desc: "Social media app interface design", tech: ["Figma", "After Effects"] },
-  { title: "Zenith Packaging", category: "Branding", desc: "Premium product packaging design", tech: ["Illustrator", "Dimension"] },
+  {
+    title: "TripBoss Travel Website",
+    category: "Web",
+    desc: "Modern travel booking platform.",
+    tech: [""],
+    image: tripboss,
+  },
+  {
+    title: "Space Education Portal",
+    category: "Web",
+    desc: "Interactive learning platform about space.",
+    tech: [""],
+    image: space,
+  },
+  {
+    title: "Quiz Website",
+    category: "Web",
+    desc: "Online quiz system with scoring.",
+    tech: [""],
+    image: quiz,
+  },
 ];
 
 const Portfolio = () => {
   const [active, setActive] = useState("All");
 
-  const filtered = active === "All" ? projects : projects.filter((p) => p.category === active);
+  const filtered =
+    active === "All" ? projects : projects.filter((p) => p.category === active);
 
   return (
     <section id="portfolio" className="section-spacing">
@@ -28,7 +47,9 @@ const Portfolio = () => {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-3 font-medium">My work</p>
+          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-3 font-medium">
+            My work
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold">
             RECENT <span className="text-gradient">PROJECTS</span>
           </h2>
@@ -73,7 +94,26 @@ const Portfolio = () => {
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 via-secondary to-card-dark overflow-hidden">
                   <div className="absolute inset-0 flex items-center justify-center">
                     <span className="text-4xl font-bold text-foreground/10 group-hover:text-foreground/20 transition-colors">
-                      {project.title.charAt(0)}
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={project.image}
+                          alt={project.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        />
+
+                        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500 flex items-center justify-center">
+                          <motion.div
+                            initial={{ opacity: 0, scale: 0 }}
+                            whileHover={{ opacity: 1, scale: 1 }}
+                            className="w-12 h-12 rounded-full bg-primary/20 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                          >
+                            <ExternalLink
+                              size={18}
+                              className="text-foreground"
+                            />
+                          </motion.div>
+                        </div>
+                      </div>{" "}
                     </span>
                   </div>
                   <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500 flex items-center justify-center">
@@ -91,11 +131,18 @@ const Portfolio = () => {
                   <span className="text-primary text-xs font-medium tracking-wider uppercase">
                     {project.category}
                   </span>
-                  <h3 className="text-foreground font-semibold text-lg mt-1">{project.title}</h3>
-                  <p className="text-secondary-foreground text-sm mt-2">{project.desc}</p>
+                  <h3 className="text-foreground font-semibold text-lg mt-1">
+                    {project.title}
+                  </h3>
+                  <p className="text-secondary-foreground text-sm mt-2">
+                    {project.desc}
+                  </p>
                   <div className="flex gap-2 mt-4">
                     {project.tech.map((t) => (
-                      <span key={t} className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground">
+                      <span
+                        key={t}
+                        className="text-xs px-2 py-1 rounded-full bg-secondary text-secondary-foreground"
+                      >
                         {t}
                       </span>
                     ))}

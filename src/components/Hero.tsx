@@ -1,27 +1,32 @@
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBehance,
   faFacebookF,
   faInstagram,
-  faPinterestP,
-  faTwitter,
-  faWhatsapp,
+  faLinkedinIn,
+  faGithub,
+  faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import ThreeScene from "./ThreeScene";
+import harshadraj from "../asset/harshad.jpeg";
 
 const socials = [
-  { icon: faBehance, href: "#" },
-  { icon: faFacebookF, href: "#" },
-  { icon: faInstagram, href: "#" },
-  { icon: faPinterestP, href: "#" },
-  { icon: faTwitter, href: "#" },
-  { icon: faWhatsapp, href: "#" },
+  { icon: faGithub, href: "https://github.com/harshad333-v" },
+  { icon: faFacebookF, href: "https://www.facebook.com/rj.harshad19/" },
+  { icon: faInstagram, href: "https://www.instagram.com/__theharshad/" },
+  { icon: faXTwitter, href: "https://x.com/rj_harshad" },
+  {
+    icon: faLinkedinIn,
+    href: "https://www.linkedin.com/in/harshad-raj-gupta?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+  },
 ];
 
 const Hero = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center overflow-hidden"
+    >
       <ThreeScene />
       <div className="container-portfolio relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-24">
         <motion.div
@@ -35,7 +40,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="text-primary text-sm tracking-[0.3em] uppercase mb-4 font-medium"
           >
-            Creative Designer
+            Web Developer
           </motion.p>
 
           <motion.h1
@@ -44,9 +49,9 @@ const Hero = () => {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-5xl md:text-7xl font-bold leading-tight mb-4"
           >
-            JASON
+            HARSHAD
             <br />
-            <span className="text-gradient">MARTIN</span>
+            <span className="text-gradient">RAJ GUPTA</span>
           </motion.h1>
 
           <motion.p
@@ -54,9 +59,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
             className="text-lg text-secondary-foreground mb-8"
-          >
-            Graphic Designer
-          </motion.p>
+          ></motion.p>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -111,9 +114,16 @@ const Hero = () => {
           className="hidden lg:flex justify-center items-center relative"
         >
           <div className="relative w-80 h-80">
-            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-hover-cyan/10 animate-pulse-glow" />
-            <div className="absolute inset-4 rounded-full bg-gradient-to-br from-card-dark to-background border border-border flex items-center justify-center">
-              <span className="text-6xl font-bold text-gradient">JM</span>
+            {/* Glow background */}
+            <div className="absolute inset-0 rounded-full bg-gradient-to-br from-primary/20 to-hover-cyan/10 animate-pulse-glow"></div>
+
+            {/* Image container */}
+            <div className="absolute inset-4 rounded-full overflow-hidden border border-border bg-gradient-to-br from-card-dark to-background">
+              <img
+                src=  {harshadraj}
+                alt="Harshad Raj Gupta"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </motion.div>

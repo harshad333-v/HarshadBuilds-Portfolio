@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, MapPin } from "lucide-react";
+import harshadraj from "../asset/harshad.jpeg";
 
 const About = () => {
   return (
@@ -12,7 +13,9 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="mb-16"
         >
-          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-3 font-medium">Get to know me</p>
+          <p className="text-primary text-sm tracking-[0.3em] uppercase mb-3 font-medium">
+            Get to know me
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold">
             ABOUT <span className="text-gradient">ME</span>
           </h2>
@@ -27,27 +30,30 @@ const About = () => {
             className="space-y-6"
           >
             <p className="text-secondary-foreground leading-relaxed text-lg">
-              Graphic Designer with over 10 years of experience specializing in IT department
-              management for international logistics companies. I can implement effective IT
-              strategies at local and global levels. My greatest strength is business awareness
-              which enables me to permanently streamline infrastructure and applications.
+              I am a second-year B.Tech Computer Science student focused on MERN
+              stack development. Skilled in JavaScript, C, Java, Python, HTML,
+              CSS, Bootstrap, Tailwind CSS, and MySQL, with a growing foundation
+              in Data Structures and Algorithms. I enjoy building projects,
+              solving problems, and continuously learning new technologies. My
+              goal is to become a professional software engineer and build
+              impactful digital products.
             </p>
 
             <div className="space-y-3">
               <a
-                href="mailto:jmartin@uptowork.com"
+                href="mailto:gptharshad@gmail.com"
                 className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors group"
               >
                 <span className="w-10 h-10 rounded-lg glass flex items-center justify-center group-hover:glow-border transition-all">
                   <Mail size={16} className="text-primary" />
                 </span>
-                jmartin@uptowork.com
+                gptharshad@gmail.com
               </a>
               <div className="flex items-center gap-3 text-secondary-foreground">
                 <span className="w-10 h-10 rounded-lg glass flex items-center justify-center">
                   <MapPin size={16} className="text-primary" />
                 </span>
-                Florida, Orlando, 12529 State Road 555
+                Gwalior, Madhya Pradesh, India.
               </div>
             </div>
           </motion.div>
@@ -63,11 +69,10 @@ const About = () => {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/10 to-hover-cyan/5 glow-border" />
               <div className="absolute inset-1 rounded-2xl bg-card-dark overflow-hidden flex items-center justify-center">
                 <div className="text-center">
-                  <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/30 to-hover-cyan/20 flex items-center justify-center">
-                    <span className="text-3xl font-bold text-gradient">JM</span>
+                  <div className="absolute inset-0 full overflow-hidden border border-border bg-gradient-to-br from-card-dark to-background">
+                    {" "}
+                    <img src={harshadraj} alt="Harshad Raj Gupta" />
                   </div>
-                  <p className="text-foreground font-semibold text-lg">Jason Martin</p>
-                  <p className="text-secondary-foreground text-sm">Graphic Designer</p>
                 </div>
               </div>
             </div>
