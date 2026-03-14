@@ -1,68 +1,127 @@
-# Welcome to my portfolio project
+# HarshadBuilds – Developer Portfolio
 
-## Project info
+A modern and responsive developer portfolio showcasing my projects, skills, and work as a web developer.
+This portfolio highlights my experience in building interactive web applications using modern frontend technologies.
 
-**URL**: https://harshadbuilds.dev/
+---
 
-## How can I edit this code?
+## Live Website
 
-There are several ways of editing your application.
+https://harshadbuilds.dev/
 
+---
 
-**Use your preferred IDE**
+## About This Project
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+HarshadBuilds is a personal portfolio website designed to present my development work, technical skills, and projects in a clean and professional interface.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+The goal of this portfolio is to provide recruiters and collaborators with an easy way to explore my work and see the technologies I use.
 
-Follow these steps:
+---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## Features
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+* Responsive design for desktop, tablet, and mobile
+* Interactive project showcase
+* Smooth animations using Framer Motion
+* Modern UI with Tailwind CSS
+* Clean and minimal layout
+* SEO optimized meta tags
+* Fast performance and optimized assets
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Tech Stack
+
+Frontend
+
+* React
+* TypeScript
+* Tailwind CSS
+* Framer Motion
+
+Tools
+
+* Git
+* GitHub
+* Vite
+
+Deployment
+
+* Netlify
+
+---
+
+## Project Structure
+
+```
+portfolio
+│
+├── public
+│   ├── logo.png
+│   └── preview.png
+│
+├── src
+│   ├── components
+│   ├── pages
+│   ├── assets
+│   └── main.tsx
+│
+└── index.html
+```
+
+---
+
+## Installation
+
+Clone the repository
+
+```
+git clone https://github.com/harshad333-v/HarshadBuilds-Portfolio.git
+```
+
+Move into the project folder
+
+```
+cd HarshadBuilds-Portfolio
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the development server
+
+```
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Future Improvements
 
-**Use GitHub Codespaces**
+* Add blog section
+* Add dark/light theme toggle
+* Improve project filtering
+* Add project case studies
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Author
 
-This project is built with:
+Harshad Raj Gupta
+Web Developer
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+GitHub
+https://github.com/harshad333-v/
 
+LinkedIn
+https://www.linkedin.com/in/harshad-raj-gupta
 
+---
 
- 
+## License
 
-## Can I connect a custom domain to my project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more.
+This project is open-source and available under the MIT License.
