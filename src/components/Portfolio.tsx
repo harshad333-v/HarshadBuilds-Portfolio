@@ -4,6 +4,8 @@ import { ExternalLink } from "lucide-react";
 import tripboss from "../asset/Tripboss.png";
 import space from "../asset/spaceEdu.png";
 import quiz from "../asset/quiz.png";
+import currency_conveter from "../asset/CurrenctConveter.png";
+import { link } from "fs";
 
 const filters = ["All"];
 
@@ -14,6 +16,7 @@ const projects = [
     desc: "Modern travel booking platform.",
     tech: [""],
     image: tripboss,
+    link: ["https://harshad333-v.github.io/TripBoss-Travel-site/"],
   },
   {
     title: "Space Education Portal",
@@ -21,13 +24,23 @@ const projects = [
     desc: "Interactive learning platform about space.",
     tech: [""],
     image: space,
+    link: [""],
   },
   {
     title: "Quiz Website",
     category: "Web",
     desc: "Online quiz system with scoring.",
     tech: [""],
-    image: quiz,
+    image: quiz,  
+    link: [""],
+  },
+  {
+    title: "Currency Converter",
+    category: "Web",
+    desc: "Real-time currency conversion tool.",
+    tech: [""],
+    image: currency_conveter,
+    link: ["https://currencyconverter-ba9g.onrender.com/"],
   },
 ];
 
@@ -146,6 +159,17 @@ const Portfolio = () => {
                         {t}
                       </span>
                     ))}
+                  </div>
+                  <div className="flex gap-3 mt-4">
+                    <a
+                      href= {project.link}
+                      target="_blank"
+                      className="text-xs px-3 py-1.5 rounded-md bg-primary text-primary-foreground hover:bg-primary/80 transition"
+                    >
+                      Live
+                    </a>
+
+                  
                   </div>
                 </div>
               </motion.div>
