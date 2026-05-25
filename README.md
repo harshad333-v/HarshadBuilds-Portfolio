@@ -7,7 +7,7 @@ This portfolio highlights my experience in building interactive web applications
 
 ## Live Website
 
-https://harshadbuilds.dev/
+https://harshadbuilds.netlify.app/
 
 ---
 
